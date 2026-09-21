@@ -1,0 +1,87 @@
+\documentclass[12pt,notitlepage]{article}
+% Setup
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+\setlength{\parindent}{0pt}
+%\usepackage{indentfirst}
+\frenchspacing
+\usepackage{setspace}
+
+% Math and symbols
+\usepackage{amsmath,amssymb,amsthm,gensymb}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage[super]{nth}
+\newtheorem*{theorem*}{Theorem}
+\usepackage{polynom}
+
+% Functionality
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=blue,urlcolor=blue,citecolor=blue}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{citations.bib}
+
+% Document
+\begin{document}
+\begin{flushleft}
+    Luc Cohen-Wanis, Nolan McKew, Alex Schaefer, Rae Tiffen \\
+    Lecture proposal: LLM classifiers / ``Classy LLMs'' \\
+    September 23, 2026
+\end{flushleft}
+\vspace{-1em}
+\rule{\textwidth}{0.4pt}
+\vspace{-2em}
+\onehalfspacing
+
+\subsection*{Learning objectives}
+We hope students will come away from our seminar with three understandings:
+\begin{enumerate}
+    \item LLMs can be used for classification problems, both binary and multiclass, and are currently used in content moderation
+    \item LLM classifiers present strong benefits over more traditional statistical methods when handling text data, and through human-readable prompts allows for a unique window into how the model evaluates its inputs
+    \item LLM classifier prompts can be refined iteratively to in essence ``train'' the policy text, both with human-in-the-loop and self-contained approaches
+\end{enumerate}
+
+LLM classifiers are a relatively new and understudied technology, and are incredibly useful in allowing for human-configurable classifiers that are more adaptable and less of a black box than many traditional statistical approaches. We expect that, as LLM classifiers become more popular both in industry and academia, our learning this content as prep and exposing the class to it will be useful for our development as data scientists.
+
+\subsection*{Core readings}
+Likely \textcite{wangSmartExpertSystem2024} and \textcite{chakrabartiCoPESmallLanguage2025}. The first builds background on using LLM classifiers for text data, and the second applies LLM classifiers to content moderation problems.
+
+\subsection*{Class outline}
+We expect to cover three topics; each section will begin with a short lecture and transition into more workshop-style small group discussions.
+
+\begin{enumerate}
+    \item Introduction to classifiers and LLMs (\(\sim\)45min)
+    \begin{itemize}
+        \item Presenters: Alex
+        \item Source material: \textcite{IntroductionLargeLanguage}, \textcite{LargeLanguageModel}, \textcite{kumarLargeLanguageModels2024}
+        \item Lecture idea: Refresh on classifiers (map from feature set to [0,1], example using logistic regression, thresholds, precision, recall, F1), introductory LLM architecture (transformers).
+        \item Activity/workshop idea: Create an interactive demo following the steps of a transformer.
+    \end{itemize}
+    \item LLMs as classifiers (\(\sim\)1hr30min)
+    \begin{itemize}
+        \item Presenters: Luc and Nolan
+        \item Source material: \textcite{youLLMasclassifierSemiSupervisedIterative2025}, \textcite{daiLLMClassifierLeveraging2025}, \textcite{TextClassificationLLMs}, \textcite{wangSmartExpertSystem2024}, \textcite{henrichsenTwoStageReasoningInfusedLearning2025}, \textcite{pangakisKnowledgeDistillationAutomated2024}
+        \item Lecture idea and activity:
+        \begin{itemize}
+            \item Nolan: Pros and Cons of different models: open source vs paid models; Possible demo: showing the differences between an open source and an industry paid model on the same classification project
+            \item Luc: How to use LLMs for semi-supervised learning (label extraction + classification) 
+        \end{itemize}
+    \end{itemize}
+    \item LLM classifiers in action: policy refinement and application to content moderation (\(\sim\)45min)
+    \begin{itemize}
+        \item Presenters: Rae
+        \item Source material: \textcite{kollaLLMMod2024CHI2024}, \textcite{chakrabartiCoPESmallLanguage2025}
+        \item Lecture idea: Theory of refining LLM classifier prompts (``policies'') with iterative loops to maximize F1. Overview of applications to content moderation on Reddit and Wikipedia.
+        \item Activity/workshop idea: Demo of classifier iteration and small group discussions about potential use cases of LLM classifiers.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Dates}
+We can present on all dates except 10/28.
+
+
+\clearpage
+\printbibliography
+\end{document}

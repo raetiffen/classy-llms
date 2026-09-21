@@ -1,0 +1,167 @@
+@online{chakrabartiCoPESmallLanguage2025,
+  title = {{{CoPE}}: {{A Small Language Model}} for {{Steerable}} and {{Scalable Content Labeling}}},
+  shorttitle = {{{CoPE}}},
+  author = {Chakrabarti, Samidh and Willner, David and Klyman, Kevin and Saade, Tiffany and Capstick, Emily and Nong, Sabina},
+  date = {2025-12-19},
+  eprint = {2512.18027},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CL},
+  doi = {10.48550/arXiv.2512.18027},
+  url = {http://arxiv.org/abs/2512.18027},
+  urldate = {2026-09-21},
+  abstract = {This paper details the methodology behind CoPE, a policy-steerable small language model capable of fast and accurate content labeling. We present a novel training curricula called Contradictory Example Training that enables the model to learn policy interpretation rather than mere policy memorization. We also present a novel method for generating content policies, called Binocular Labeling, which enables rapid construction of unambiguous training datasets. When evaluated across seven different harm areas, CoPE exhibits equal or superior accuracy to frontier models at only 1\% of their size. We openly release a 9 billion parameter version of the model that can be run on a single consumer-grade GPU. Models like CoPE represent a paradigm shift for classifier systems. By turning an ML task into a policy writing task, CoPE opens up new design possibilities for the governance of online platforms.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language,Computer Science - Computers and Society,Computer Science - Social and Information Networks},
+  file = {C\:\\Users\\rae\\Zotero\\storage\\MCMVA8KF\\Chakrabarti et al. - 2025 - CoPE A Small Language Model for Steerable and Scalable Content Labeling.pdf;C\:\\Users\\rae\\Zotero\\storage\\32JYLTLQ\\2512.html}
+}
+
+@article{daiLLMClassifierLeveraging2025,
+  title = {{{LLM}} as a {{Classifier}}: {{Leveraging Large Language Models}} for {{Text}} and {{Vision Classification}}},
+  shorttitle = {{{LLM}} as a {{Classifier}}},
+  author = {Dai, Shenghong and Mehrotra, Shubham and Pentyala, Shiva Kumar and Liu, Yingchi and Banerjee, Suman and Zhu, James and Bi, Bin and Asur, Sitaram},
+  date = {2025-10-08},
+  url = {https://openreview.net/forum?id=78WdKlYSeO},
+  urldate = {2026-09-21},
+  abstract = {Classification is a fundamental capability for AI systems, yet current large language model (LLM) approaches remain poorly suited for latency-critical applications. Prompting and constrained decoding produce verbose, multi-token outputs that require expensive token-by-token generation, while encoder-based models achieve faster inference at the cost of flexibility and generative capacity. We propose LaaC (LLM as a Classifier), a framework that formulates classification as constrained generation with single-token outputs. By introducing atomic label tokens and applying parameter-efficient fine-tuning, our method reduces classification to a deterministic one-step decoding problem. Experiments across text and multimodal benchmarks demonstrate both strong accuracy and consistently fast inference. On MIntRec 2.0, a fine-tuned Gemma-3-27B model attains 62.7\textbackslash\% accuracy, outperforming GPT-4o (43.7\textbackslash\%) and GPT-5 (51.8\textbackslash\%) while running more than an order of magnitude faster. On standard text classification benchmarks, our models match GPT-4o in accuracy while achieving 8 × lower tail latency. These results establish decoder-style LLMs as practical and scalable classifiers for real-time applications. Our code is available at https://anonymous.4open.science/r/LaaC\_ICLR.},
+  langid = {english},
+  file = {C:\Users\rae\Zotero\storage\53NQMKRQ\Dai et al. - 2025 - LLM as a Classifier Leveraging Large Language Models for Text and Vision Classification.pdf}
+}
+
+@online{henrichsenTwoStageReasoningInfusedLearning2025,
+  title = {Two-{{Stage Reasoning-Infused Learning}}: {{Improving Classification}} with {{LLM-Generated Reasoning}}},
+  shorttitle = {Two-{{Stage Reasoning-Infused Learning}}},
+  author = {Henrichsen, Mads and Krebs, Rasmus},
+  date = {2025-06-30},
+  eprint = {2507.00214},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CL},
+  doi = {10.48550/arXiv.2507.00214},
+  url = {http://arxiv.org/abs/2507.00214},
+  urldate = {2026-09-21},
+  abstract = {Standard classification models often map inputs directly to labels without explicit reasoning, potentially limiting their performance, robustness, and interpretability. This paper introduces a novel two-stage approach to enhance text classification by leveraging Large Language Model (LLM)-generated reasonings. In the first stage, we fine-tune a Llama-3.2-1B-Instruct model (henceforth Llama-R-Gen) on a general-purpose reasoning dataset (syvai/reasoning-gen) to generate textual reasoning (R) given a question and its answer. In the second stage, this generally trained Llama-R-Gen is used offline to create an augmented training dataset for a downstream generative model. This downstream model, based on Llama-3.2-1B-Instruct, takes only the input text (Q) and is trained to output the generated reasoning (R) immediately followed by the predicted emotion (A). We demonstrate this methodology on the dair-ai/emotion dataset for emotion classification. Our experiments show that the generative model trained to output reasoning and the emotion (Classifier Q-{$>$}RA) achieves a significant improvement of 8.7 percentage points in accuracy (for emotion prediction) compared to a baseline generative model trained solely to output the emotion (Classifier Q-{$>$}A), highlighting the strong generalization capabilities of the reasoning generation and the benefit of explicit reasoning training. This work underscores the potential of LLM-generated reasonings for creating richer training datasets, thereby improving the performance of diverse downstream NLP tasks and providing explicit explanations.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {C\:\\Users\\rae\\Zotero\\storage\\K8H76FBV\\Henrichsen and Krebs - 2025 - Two-Stage Reasoning-Infused Learning Improving Classification with LLM-Generated Reasoning.pdf;C\:\\Users\\rae\\Zotero\\storage\\G3JA5BYL\\2507.html}
+}
+
+@online{IntroductionLargeLanguage,
+  title = {Introduction to {{Large Language Models}} | {{Machine Learning}}},
+  author = {{Google for Developers}},
+  url = {https://developers.google.com/machine-learning/crash-course/llm},
+  urldate = {2026-09-21},
+  abstract = {This course module provides an overview of language models and large language models (LLMs), covering concepts including tokens, n-grams, Transformers, self-attention, distillation, fine-tuning, and prompt engineering.},
+  langid = {english},
+  organization = {Google for Developers},
+  file = {C:\Users\rae\Zotero\storage\6LH5PLHH\llm.html}
+}
+
+@article{kollaLLMMod2024CHI2024,
+  title = {{{LLM-Mod}}: 2024 {{CHI Conference}} on {{Human Factors}} in {{Computing Sytems}}, {{CHI EA}} 2024},
+  shorttitle = {{{LLM-Mod}}},
+  author = {Kolla, Mahi and Salunkhe, Siddharth and Chandrasekharan, Eshwar and Saha, Koustuv},
+  date = {2024-05-11},
+  journaltitle = {CHI 2024 - Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Sytems},
+  series = {Conference on {{Human Factors}} in {{Computing Systems}} - {{Proceedings}}},
+  publisher = {Association for Computing Machinery},
+  doi = {10.1145/3613905.3650828},
+  url = {https://www.scopus.com/pages/publications/85194133383},
+  urldate = {2026-09-21},
+  abstract = {Content moderation is critical for maintaining healthy online spaces. However, it remains a predominantly manual task. Moderators are often exhausted by low moderator-to-posts ratio. Researchers have been exploring computational tools to assist human moderators. The natural language understanding capabilities of large language models (LLMs) open up possibilities to use LLMs for online moderation. This work explores the feasibility of using LLMs to identify rule violations on Reddit.We examine howan LLM-based moderator (LLM-Mod) reasons about 744 posts across 9 subreddits that violate different types of rules. We find that while LLM-Mod has a good true-negative rate (92.3\%), it has a bad true-positive rate (43.1\%), performing poorly when flagging rule-violating posts. LLM-Mod is likely to flag keyword-matching-based rule violations, but cannot reason about posts with higher complexity. We discuss the considerations for integrating LLMs into content moderation workflows and designing platforms that support both AI-driven and human-in-the-loop moderation.}
+}
+
+@article{kumarLargeLanguageModels2024,
+  title = {Large Language Models ({{LLMs}}): Survey, Technical Frameworks, and Future Challenges},
+  shorttitle = {Large Language Models ({{LLMs}})},
+  author = {Kumar, Pranjal},
+  date = {2024-08-18},
+  journaltitle = {Artificial Intelligence Review},
+  shortjournal = {Artif Intell Rev},
+  volume = {57},
+  number = {10},
+  pages = {260},
+  issn = {1573-7462},
+  doi = {10.1007/s10462-024-10888-y},
+  url = {https://doi.org/10.1007/s10462-024-10888-y},
+  urldate = {2026-09-21},
+  abstract = {Artificial intelligence (AI) has significantly impacted various fields. Large language models (LLMs) like GPT-4, BARD, PaLM, Megatron-Turing NLG, Jurassic-1 Jumbo etc., have contributed to our understanding and application of AI in these domains, along with natural language processing (NLP) techniques. This work provides a comprehensive overview of LLMs in the context of language modeling, word embeddings, and deep learning. It examines the application of LLMs in diverse fields including text generation, vision-language models, personalized learning, biomedicine, and code generation. The paper offers a detailed introduction and background on LLMs, facilitating a clear understanding of their fundamental ideas and concepts. Key language modeling architectures are also discussed, alongside a survey of recent works employing LLM methods for various downstream tasks across different domains. Additionally, it assesses the limitations of current approaches and highlights the need for new methodologies and potential directions for significant advancements in this field.},
+  langid = {english},
+  keywords = {Artificial intelligence,Generative language models,Large language models,Machine learning,Natural language processing,Neural networks},
+  file = {C:\Users\rae\Zotero\storage\9C5M5KYY\Kumar - 2024 - Large language models (LLMs) survey, technical frameworks, and future challenges.pdf}
+}
+
+@online{LargeLanguageModel,
+  title = {Large {{Language Model}} ({{LLM}}) {{Tutorial}}},
+  author = {{GeeksforGeeks}},
+  url = {https://www.geeksforgeeks.org/deep-learning/large-language-model-llm-tutorial/},
+  urldate = {2026-09-21},
+  abstract = {Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.},
+  langid = {english},
+  organization = {GeeksforGeeks},
+  file = {C:\Users\rae\Zotero\storage\T4YPCXDF\large-language-model-llm-tutorial.html}
+}
+
+@online{pangakisKnowledgeDistillationAutomated2024,
+  title = {Knowledge {{Distillation}} in {{Automated Annotation}}: {{Supervised Text Classification}} with {{LLM-Generated Training Labels}}},
+  shorttitle = {Knowledge {{Distillation}} in {{Automated Annotation}}},
+  author = {Pangakis, Nicholas and Wolken, Samuel},
+  date = {2024-06-25},
+  eprint = {2406.17633},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CL},
+  doi = {10.48550/arXiv.2406.17633},
+  url = {http://arxiv.org/abs/2406.17633},
+  urldate = {2026-09-21},
+  abstract = {Computational social science (CSS) practitioners often rely on human-labeled data to fine-tune supervised text classifiers. We assess the potential for researchers to augment or replace human-generated training data with surrogate training labels from generative large language models (LLMs). We introduce a recommended workflow and test this LLM application by replicating 14 classification tasks and measuring performance. We employ a novel corpus of English-language text classification data sets from recent CSS articles in high-impact journals. Because these data sets are stored in password-protected archives, our analyses are less prone to issues of contamination. For each task, we compare supervised classifiers fine-tuned using GPT-4 labels against classifiers fine-tuned with human annotations and against labels from GPT-4 and Mistral-7B with few-shot in-context learning. Our findings indicate that supervised classification models fine-tuned on LLM-generated labels perform comparably to models fine-tuned with labels from human annotators. Fine-tuning models using LLM-generated labels can be a fast, efficient and cost-effective method of building supervised text classifiers.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {C\:\\Users\\rae\\Zotero\\storage\\HVMSGISG\\Pangakis and Wolken - 2024 - Knowledge Distillation in Automated Annotation Supervised Text Classification with LLM-Generated Tr.pdf;C\:\\Users\\rae\\Zotero\\storage\\ZVN48ACL\\2406.html}
+}
+
+@online{TextClassificationLLMs,
+  title = {Text {{Classification}} with {{LLMs}}: {{Approaches}} and {{Evaluation Techniques For Developers}}},
+  shorttitle = {Text {{Classification}} with {{LLMs}}},
+  author = {Lam, Lina},
+  url = {https://www.helicone.ai/blog/text-classification-with-llms},
+  urldate = {2026-09-21},
+  abstract = {Explore the top methods for text classification with Large Language Models (LLMs), including supervised vs unsupervised learning, fine-tuning strategies, model evaluation, and practical best practices for accurate results.},
+  langid = {english},
+  organization = {Helicone.ai},
+  file = {C:\Users\rae\Zotero\storage\6CJ2PRPD\text-classification-with-llms.html}
+}
+
+@online{wangSmartExpertSystem2024,
+  title = {Smart {{Expert System}}: {{Large Language Models}} as {{Text Classifiers}}},
+  shorttitle = {Smart {{Expert System}}},
+  author = {Wang, Zhiqiang and Pang, Yiran and Lin, Yanbin},
+  date = {2024-05-17},
+  eprint = {2405.10523},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CL},
+  doi = {10.48550/arXiv.2405.10523},
+  url = {http://arxiv.org/abs/2405.10523},
+  urldate = {2026-09-21},
+  abstract = {Text classification is a fundamental task in Natural Language Processing (NLP), and the advent of Large Language Models (LLMs) has revolutionized the field. This paper introduces the Smart Expert System, a novel approach that leverages LLMs as text classifiers. The system simplifies the traditional text classification workflow, eliminating the need for extensive preprocessing and domain expertise. The performance of several LLMs, machine learning (ML) algorithms, and neural network (NN) based structures is evaluated on four datasets. Results demonstrate that certain LLMs surpass traditional methods in sentiment analysis, spam SMS detection and multi-label classification. Furthermore, it is shown that the system's performance can be further enhanced through few-shot or fine-tuning strategies, making the fine-tuned model the top performer across all datasets. Source code and datasets are available in this GitHub repository: https://github.com/yeyimilk/llm-zero-shot-classifiers.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Computation and Language},
+  file = {C\:\\Users\\rae\\Zotero\\storage\\KRMFBVKJ\\Wang et al. - 2024 - Smart Expert System Large Language Models as Text Classifiers.pdf;C\:\\Users\\rae\\Zotero\\storage\\RRQW7DLQ\\2405.html}
+}
+
+@online{youLLMasclassifierSemiSupervisedIterative2025,
+  title = {{{LLM-as-classifier}}: {{Semi-Supervised}}, {{Iterative Framework}} for {{Hierarchical Text Classification}} Using {{Large Language Models}}},
+  shorttitle = {{{LLM-as-classifier}}},
+  author = {You, Doohee and Parisi, Andy and Velden, Zach Vander and Inojosa, Lara Dantas},
+  date = {2025-08-22},
+  eprint = {2508.16478},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CL},
+  doi = {10.48550/arXiv.2508.16478},
+  url = {http://arxiv.org/abs/2508.16478},
+  urldate = {2026-09-21},
+  abstract = {The advent of Large Language Models (LLMs) has provided unprecedented capabilities for analyzing unstructured text data. However, deploying these models as reliable, robust, and scalable classifiers in production environments presents significant methodological challenges. Standard fine-tuning approaches can be resource-intensive and often struggle with the dynamic nature of real-world data distributions, which is common in the industry. In this paper, we propose a comprehensive, semi-supervised framework that leverages the zero- and few-shot capabilities of LLMs for building hierarchical text classifiers as a framework for a solution to these industry-wide challenges. Our methodology emphasizes an iterative, human-in-the-loop process that begins with domain knowledge elicitation and progresses through prompt refinement, hierarchical expansion, and multi-faceted validation. We introduce techniques for assessing and mitigating sequence-based biases and outline a protocol for continuous monitoring and adaptation. This framework is designed to bridge the gap between the raw power of LLMs and the practical need for accurate, interpretable, and maintainable classification systems in industry applications.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language,Computer Science - Information Retrieval},
+  file = {C\:\\Users\\rae\\Zotero\\storage\\8XQUXWFN\\You et al. - 2025 - LLM-as-classifier Semi-Supervised, Iterative Framework for Hierarchical Text Classification using L.pdf;C\:\\Users\\rae\\Zotero\\storage\\4WEBTUMC\\2508.html}
+}
