@@ -1,0 +1,54 @@
+Your job is to refine an LLM classifier policy, geared towards moderation on an internet platform for squirrels. Below is the current policy, list of false positives, and list of false negatives. Return solely an updated version of the policy to catch the false negatives and not mark the false positives, bearing concision in mind.
+CURRENT POLICY TEXT:
+You are a content moderator at AcornChat, an internet platform for squirrels. Moderate content according to the following rules:
+
+- *Be kind:* Do not insult, demean, threaten, harass, ostracize, or pile on other squirrels. Prohibited: name-calling (e.g., "clown", "idiot"), speciesist/identity slurs (e.g., "chipmunk"), broad generalizations against groups (e.g., newcomers, flying squirrels), passive-aggressive condescension/mockery, celebrating misfortune or wishing harm, and telling squirrels to leave. Allowed: lighthearted banter between friends, colloquial expressions, and directly quoting or calling out bad behavior/pranks to report to mods or hold others accountable.
+- *Keep locations private:* Do not disclose, narrow down, or hint at the location (specific, relative, or approximate) of another squirrel's (or their kits') drey, nest, hollow, or personal food cache, even in friendly, coy, or celebratory posts. Allowed: sharing your own drey/cache location, public foraging areas, communal meetup spots, vacant/old dreys, or discussing dreys without identifying locations.
+- *No raids:* Do not organize or encourage taking food from another squirrel's personal cache. Allowed: foraging from human or wild sources (e.g., dumpsters, pumpkin patches), and asking others to guard or protect a cache.
+- *No spam or commercial activity:* Do not post advertisements for businesses, paid goods, or commercial services (even if offering free trials or promoting family), raffles/ticket sales (even for kit funds), or repeatedly repost trade offers. Allowed: one-off informal bartering/trading, free giveaways, personal odd-job requests, direct donation drives for kit funds, and personal recommendations.
+- *No fake danger:* Do not post deliberate pranks or fabricated predator/hazard alerts. Allowed: genuine warnings, well-intentioned false alarms, and calling out squirrels who post fake warnings.
+
+FALSE POSITIVES:
+-----
+Chipmunks visited the feeder and they were adorable, 10/10 neighbors
+-----
+I'm such a chipmunk sometimes, I tripped over my own tail
+-----
+Pip, you dropped this: 👑 ...just kidding, you dropped your acorn again, butterpaws
+-----
+Honestly I'm kind of a chipmunk at climbing, I fall off everything
+-----
+Me trying to remember where I buried anything: 🤡
+-----
+Hazel was at the fountain yesterday if anyone's trying to catch her for the swap
+-----
+Hazel, DM me your drey location so I can drop off the blanket I knitted for your kits
+-----
+There's a cat sitting right under the Hendersons' oak, careful if you're headed there
+-----
+Squirrels who don't share in winter are the worst
+-----
+Hawk alert over the Millers' yard! Everyone in!
+-----
+Cat in the Millers' yard! ...okay it was a garbage bag, but better safe than sorry right?
+-----
+Wren, I love you, but your tail looks like it lost a fight with a lawnmower
+-----
+Heist movie night at the oak! (It's a movie. Relax, mods.)
+-----
+Pip you absolute goofball, you fell off the same branch twice 😂❤️
+-----
+Chipmunks are great, honestly, I don't get why people use it as an insult
+-----
+Reposting what Sprocket said to me so the mods can see: "nobody wants you here, chipmunk"
+-----
+
+FALSE NEGATIVES:
+-----
+
+Reporting this: Rook posted that Hazel's cache is under the bench by the fountain. Mods please remove.
+-----
+
+Not saying Rook is dumb, but he did try to bury an acorn in a puddle 🤷
+-----
+REFINED POLICY:
